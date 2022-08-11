@@ -1,0 +1,75 @@
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px; 
+    cursor: pointer;
+}
+
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+    cursor: pointer;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: var(--app-color-7);
+    }
+}
+
+@for $i from 1 through 50 {
+    .text-animate._#{$i} {
+        animation-delay: #{$i / 30}s;
+    }
+}
+
+@keyframes bounceIn {
+    0% { 
+       opacity: 0; 
+       transform: scale(.3);
+    }
+    50% { 
+       opacity: 1;
+       transform: scale(1.05);
+    }
+    70% {
+       transform: scale(.9);
+       opacity: 1;
+    }
+    100% {
+       transform: scale(1);
+       opacity: 1;
+    }
+ } 
+
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}

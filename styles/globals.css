@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Argentum Sans Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/ArgentumSans-Black.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Argentum Sans Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/ArgentumSans-Bold.ttf') format('woff');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Argentum Sans Black", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  color: var(--app-text-color-black);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  --app-color-0: #c2deff;
+  --app-color-1: #80ffdb;
+  --app-color-2: #72efdd;
+  --app-color-3: #64dfdf;
+  --app-color-4: #56cfe1;
+  --app-color-5: #48e3d9;
+  --app-color-6: #4ea8de;
+  --app-color-7: #5390d9;
+  --app-color-8: #5e60ce;
+  --app-color-9: #6166a9;
+  --app-text-color-black: #28004e;
+  --app-text-color-light: #dbdbdb;
+
+  background-color: var(--app-color-2);
+  overflow-x: hidden;
+}
+
+input, textarea {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+  outline: none;
+}
