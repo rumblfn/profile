@@ -12,6 +12,7 @@ const HeaderBox = styled.div`
     align-items: center;
     position: relative;
     z-index: 10;
+    font-size: 22px;
 `
 
 export const Header = () => {

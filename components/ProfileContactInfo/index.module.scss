@@ -1,0 +1,19 @@
+.left-bottom-box {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 2;
+}
+
+.box-with-animation {
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 26px;
+}
+

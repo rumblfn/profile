@@ -19,6 +19,7 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
   color: var(--app-text-color-black);
+  cursor: none;
 }
 
 a {
@@ -56,4 +57,16 @@ input, textarea {
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
   outline: none;
+}
+
+.app-cursor {
+  z-index: 1000;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
 }

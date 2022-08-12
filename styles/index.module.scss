@@ -1,0 +1,74 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  align-items: flex-end;
+}
+
+.right-bottom-box {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.pic {
+  width: 300px;
+  height: 300px;
+  background: url("/profile-icon.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  transform: perspective(20em) rotateX(0deg) rotateY(-15deg)
+}
+
+.pic::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 0px;
+  background: url("/profile-icon.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  filter: contrast(200%); //drop-shadow(16px 16px 20px blue)
+}
+
+.pic:before {
+  opacity: .7;
+  animation: glitch 1.5s infinite linear;
+}
+
+@keyframes glitch {
+  0% {
+    top: 0px;
+    background-position: 0px 0px;
+    height: 0px;
+  }
+  20% {
+    top: 20px;
+    background-position: 0px -20px;
+    height: 90px;
+  }
+  40% {
+    top: 120px;
+    background-position: 0px -120px;
+    height: 120px;
+  }
+  60% {
+    top: 180px;
+    background-position: 0px -180px;
+    height: 80px;
+  }
+  80% {
+    top: 240px;
+    background-position: 0px -240px;
+    height: 50px;
+  }
+  100% {
+    top: 300px;
+    background-position: 0px -300px;
+    height: 20px;
+  }
+}
