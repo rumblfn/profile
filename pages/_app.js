@@ -6,10 +6,13 @@ import {
   m
 } from "framer-motion"
 import { slideRight } from "../lib/animations"
-import {useEffect, useRef, useState} from "react";
+import {createContext, useEffect, useRef, useState} from "react";
+import Image from "next/image";
 
+export const CursorImageContext = createContext({})
 
 function MyApp({ Component, pageProps, router }) {
+  const [image, setImage] = useState('')
   const cursorRef = useRef()
 
   const handleMouseMove = event => {
@@ -28,7 +31,9 @@ function MyApp({ Component, pageProps, router }) {
   }, [])
 
   return <div style={{position: 'relative'}}>
-    <div ref={cursorRef} className='app-cursor'></div>
+    <div ref={cursorRef} className='app-cursor' style={{backgroundColor: image && 'white'}}>
+      {image ? <Image src={image} width='80px' height='80px' objectFit='cover'/> : <Image style={{opacity: '.3'}} src='/grid.jpg' width='80px' height='80px' objectFit='cover'/>}
+    </div>
     <Header/>
     <LazyMotion features={domAnimation}>
       <AnimatePresence exitBeforeEnter={true} >
@@ -40,7 +45,9 @@ function MyApp({ Component, pageProps, router }) {
           variants={slideRight.variants}
           transition={slideRight.transition}
         >
-          <Component {...pageProps} />
+          <CursorImageContext.Provider value={{setImage}}>
+            <Component {...pageProps} />
+          </CursorImageContext.Provider>
         </m.div>
       </AnimatePresence>
     </LazyMotion>

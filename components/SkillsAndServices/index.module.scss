@@ -1,16 +1,112 @@
 .left-top-box {
   position: absolute;
-  top: 25%;
+  top: 9%;
   left: 5%;
   z-index: 2;
+  animation: moving 30s infinite ease;
+}
+
+@keyframes moving {
+  0% {
+    top: 9%;
+    left: 5%;
+  }
+  10% {
+    top: 9%;
+    left: 5%;
+  }
+  20% {
+    top: 9%;
+    left: 5%;
+  }
+  30% {
+    top: 9%;
+    left: 5%;
+  }
+  40% {
+    top: 9%;
+    left: 5%;
+  }
+  50% {
+    top: 15%;
+    left: 40%;
+  }
+  60% {
+    top: 15%;
+    left: 40%;
+  }
+  70% {
+    top: 15%;
+    left: 40%;
+  }
+  80% {
+    top: 15%;
+    left: 40%;
+  }
+  90% {
+    top: 15%;
+    left: 40%;
+  }
+  100% {
+    top: 9%;
+    left: 5%;
+  }
 }
 
 .box-with-animation {
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  width: 300px;
-  height: 250px;
+  min-width: 300px;
+  min-height: 250px;
   padding: 1rem;
-  transform: perspective(30em) rotateX(-5deg) rotateY(15deg);
+  transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+  animation: persp 30s infinite ease;
+}
+
+@keyframes persp {
+  0% {
+    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+  }
+  10% {
+    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+  }
+  20% {
+    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+  }
+  30% {
+    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+  }
+  40% {
+    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+  }
+  50% {
+    transform: perspective(30em) rotateX(2deg) rotateY(-5deg);
+  }
+  60% {
+    transform: perspective(30em) rotateX(2deg) rotateY(-5deg);
+  }
+  70% {
+    transform: perspective(30em) rotateX(2deg) rotateY(-5deg);
+  }
+  80% {
+    transform: perspective(30em) rotateX(2deg) rotateY(-5deg);
+  }
+  90% {
+    transform: perspective(30em) rotateX(2deg) rotateY(-5deg);
+  }
+  100% {
+    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+  }
+}
+
+.types {
+  display: flex;
+  padding: 16px;
+  justify-content: space-evenly;
+  font-size: 26px;
+}
+
+.main {
+
 }

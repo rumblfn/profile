@@ -1,0 +1,34 @@
+.sub-title {
+  font-size: 22px;
+}
+
+.desc {
+  font-size: 18px;
+  margin-left: 12px;
+  font-weight: 300;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.item {
+  position: relative;
+  left: -100%;
+  animation: apperience-item 1s ease;
+}
+
+@for $i from 1 through 5 {
+  .item._#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+
+@keyframes apperience-item {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}

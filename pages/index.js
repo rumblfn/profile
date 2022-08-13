@@ -17,7 +17,7 @@ const Index = () => {
 
   const timer = setTimeout(() => {
     setLetterClass('text-animate-hover')
-  }, 1000)
+  }, 3000)
 
   useEffect(() => {
     return () => {
@@ -48,7 +48,7 @@ const Index = () => {
           Profile
         </TextHugeStyling>
       </TextHuge>
-      {/*<SkillsAndServices />*/}
+      <SkillsAndServices letterClass={letterClass} />
       <ContactMe transformString={transformString} />
       <div className={styles['right-bottom-box']}>
         <div className={styles.box}>

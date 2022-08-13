@@ -22,7 +22,7 @@ export const Header = () => {
 
     const timer = setTimeout(() => {
         setLetterClass('text-animate-hover')
-    }, 1000)
+    }, 3000)
 
     useEffect(() => {
         return () => {

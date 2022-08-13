@@ -43,6 +43,7 @@ html {
 
   background-color: var(--app-color-2);
   overflow-x: hidden;
+  cursor: none;
 }
 
 input, textarea {
@@ -69,4 +70,5 @@ input, textarea {
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: fixed;
+  background-size: cover;
 }
