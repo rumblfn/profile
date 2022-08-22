@@ -3,6 +3,54 @@
   flex-direction: column;
   font-size: 50px;
   align-items: flex-end;
+  width: 100%;
+}
+
+.wrap-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .wrap-box {
+    flex-direction: column;
+  }
+  .pic-tablet-box {
+    width: 100%;
+  }
+}
+
+.pic-tablet-box {
+  position: relative;
+}
+
+.pic-tablet {
+  width: 200px;
+  height: 200px;
+  background: url("/profile-icon.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.pic-tablet::before {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 0px;
+  background: url("/profile-icon.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0;
+  overflow: hidden;
+  filter: contrast(200%); //drop-shadow(16px 16px 20px blue)
+}
+
+.pic-tablet:before {
+  opacity: .7;
+  animation: glitch-tablet 1.5s infinite linear;
 }
 
 .right-bottom-box {
@@ -70,5 +118,38 @@
     top: 300px;
     background-position: 0px -300px;
     height: 20px;
+  }
+}
+
+@keyframes glitch-tablet {
+  0% {
+    top: 0px;
+    background-position: 0px 0px;
+    height: 0px;
+  }
+  20% {
+    top: 14px;
+    background-position: 0px -14px;
+    height: 60px;
+  }
+  40% {
+    top: 80px;
+    background-position: 0px -80px;
+    height: 80px;
+  }
+  60% {
+    top: 120px;
+    background-position: 0px -120px;
+    height: 53px;
+  }
+  80% {
+    top: 160px;
+    background-position: 0px -160px;
+    height: 33px;
+  }
+  100% {
+    top: 200px;
+    background-position: 0px -200px;
+    height: 0px;
   }
 }

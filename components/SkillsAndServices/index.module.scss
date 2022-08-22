@@ -1,9 +1,6 @@
 .left-top-box {
-  position: absolute;
-  top: 9%;
-  left: 5%;
+  position: relative;
   z-index: 2;
-  animation: moving 30s infinite ease;
 }
 
 @keyframes moving {
@@ -60,8 +57,6 @@
   min-width: 300px;
   min-height: 250px;
   padding: 1rem;
-  transform: perspective(30em) rotateX(2deg) rotateY(15deg);
-  animation: persp 30s infinite ease;
 }
 
 @keyframes persp {
@@ -109,4 +104,19 @@
 
 .main {
 
+}
+
+@media screen and (min-width: 833px) {
+  .left-top-box {
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    z-index: 2;
+    animation: moving 30s infinite ease;
+  }
+
+  .box-with-animation {
+    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+    animation: persp 30s infinite ease;
+  }
 }

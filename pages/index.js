@@ -1,12 +1,11 @@
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import {PageBox} from "../styled/pages";
 import {TextHuge, TextHugeStyling} from "../styled/text";
 import {AnimatedLetters} from "../components/AnimatedLetters";
-import Image from "next/image";
 import styles from '../styles/index.module.scss'
-import {ImageBox} from "../styled/image";
 import {ContactMe} from "../components/ProfileContactInfo";
 import {SkillsAndServices} from "../components/SkillsAndServices";
+import {useMediaQuery} from "../hooks/useMediaQuery";
 
 const Index = () => {
   const [screen, setScreen] = useState({width: 1280, height: 800})
@@ -14,6 +13,7 @@ const Index = () => {
   const strArrayWho = 'Shamil'.split('')
   const strArrayWhat = 'Dev Portfolio'.split('')
   const [transformString, setTransformString] = useState('')
+  const tablet = useMediaQuery(832)
 
   const timer = setTimeout(() => {
     setLetterClass('text-animate-hover')
@@ -40,6 +40,35 @@ const Index = () => {
       document.removeEventListener('mousemove', handleMouseMove)
     }
   }, [])
+
+  if (tablet) {
+    return <PageBox padding='24px' height='fit-content'>
+      <TextHuge>
+        <TextHugeStyling>
+          Profile
+        </TextHugeStyling>
+      </TextHuge>
+      <div className={styles['wrap-box']}>
+        <div className={styles['pic-tablet-box']}>
+          <div className={styles['pic-tablet']}></div>
+        </div>
+        <div className={styles.box} style={{marginBottom: 24}}>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={strArrayWho}
+            idx={1}
+          />
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={strArrayWhat}
+            idx={7}
+          />
+        </div>
+      </div>
+      <SkillsAndServices letterClass={letterClass} />
+      <ContactMe transformString={transformString} />
+    </PageBox>
+  }
 
   return (
     <PageBox>
