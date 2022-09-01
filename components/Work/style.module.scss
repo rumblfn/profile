@@ -1,0 +1,8 @@
+.text-hover {
+  transition: color .22s;
+  text-decoration: underline;
+}
+
+.text-hover:hover {
+  color: #FFFF00;
+}

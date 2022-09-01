@@ -4,6 +4,8 @@ export const TextHuge = styled.div`
     position: absolute;
     top: 5%;
     left: 5%;
+    display: flex;
+    flex-direction: column;
   
     @media (max-width: 832px) {
       position: relative;
@@ -13,11 +15,15 @@ export const TextHuge = styled.div`
 `
 
 export const TextHugeStyling = styled.span`
-    font-size: 14vw;
+    font-size: ${props => props.size ? props.size : '14vw'};
     text-shadow: 0 5px 18px rgba(0,0,0,.12);
-    color: ${props => props.color ? props.color : 'var(--app-color-3)'};
+    color: ${props => props.color ? props.color : 'var(--app-color-2)'};
+
+    @media (min-width: 1440px) {
+      font-size: ${props => props.size ? props.size : '10vw'};
+    }
   
     @media (max-width: 400px) {
-      font-size: 64px;
+      font-size: ${props => props.minSize ? props.minSize : '64px'};
     }
 `

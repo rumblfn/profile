@@ -13,13 +13,13 @@ export const SkillsAndServices = ({letterClass}) => {
 
   return <div className={styles['left-top-box']}>
     <div className={styles['box-with-animation']} style={{fontSize: 30}}>
-      <AnimatedLetters strArray={strArray} letterClass={letterClass} idx={21} />
+      <AnimatedLetters strArray={strArray} letterClass={letterClass} idx={21} classtype='title' />
       <div className={styles['types']}>
         <div onClick={() => setSelectedType('skills')}>
-          <AnimatedLetters strArray={strArraySkills} letterClass={letterClass} idx={30} />
+          <AnimatedLetters classtype='subtitle' strArray={strArraySkills} letterClass={letterClass} idx={30} />
         </div>
         <div onClick={() => setSelectedType('services')}>
-          <AnimatedLetters strArray={strArrayServices} letterClass={letterClass} idx={35} />
+          <AnimatedLetters classtype='subtitle' strArray={strArrayServices} letterClass={letterClass} idx={35} />
         </div>
       </div>
       <div className={styles.main}>

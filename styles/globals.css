@@ -2,7 +2,7 @@
   font-family: 'Argentum Sans Black';
   font-style: normal;
   font-weight: normal;
-  src: url('/ArgentumSans-Black.ttf') format('woff');
+  src: url('/ArgentumSans-Bold.ttf') format('woff');
 }
 
 @font-face {
@@ -28,17 +28,22 @@ a {
 }
 
 html {
+  --gr-color-1: #ee7752;
+  --gr-color-2: #e73c7e;
+  --gr-color-3: #23a6d5;
+  --gr-color-4: #23d5ab;
+
   --app-color-0: #c2deff;
   --app-color-1: #80ffdb;
-  --app-color-2: #72efdd;
+  --app-color-2: #000000;
   --app-color-3: #64dfdf;
   --app-color-4: #56cfe1;
   --app-color-5: #48e3d9;
   --app-color-6: #4ea8de;
-  --app-color-7: #5390d9;
+  --app-color-7: #FFFF00; /*  #5390d9  */
   --app-color-8: #5e60ce;
   --app-color-9: #6166a9;
-  --app-text-color-black: #28004e;
+  --app-text-color-black: #FFFFFF;
   --app-text-color-light: #dbdbdb;
 
   background-color: var(--app-color-2);
@@ -68,7 +73,18 @@ input, textarea {
   border: 1px solid black;
   pointer-events: none;
   overflow: hidden;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(73px, 21px, 0);
   position: fixed;
   background-size: cover;
+}
+
+.code-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5%;
+  z-index: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
 }

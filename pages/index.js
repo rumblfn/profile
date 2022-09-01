@@ -42,10 +42,16 @@ const Index = () => {
   }, [])
 
   if (tablet) {
-    return <PageBox padding='24px' height='fit-content'>
+    return <PageBox padding='24px 36px 24px 24px'>
       <TextHuge>
         <TextHugeStyling>
           Profile
+        </TextHugeStyling>
+        <TextHugeStyling color={'var(--app-color-5)'} size={'5vw'} minSize={'24px'}>
+          Hi 👋, I am
+        </TextHugeStyling>
+        <TextHugeStyling color={'var(--app-color-1)'} size={'7vw'} minSize={'32px'}>
+          Full-stack Web Developer
         </TextHugeStyling>
       </TextHuge>
       <div className={styles['wrap-box']}>
@@ -75,6 +81,12 @@ const Index = () => {
       <TextHuge>
         <TextHugeStyling>
           Profile
+        </TextHugeStyling>
+        <TextHugeStyling color={'var(--app-color-5)'} size={'5vw'} minSize={'24px'}>
+          Hi 👋, I am
+        </TextHugeStyling>
+        <TextHugeStyling color={'var(--app-color-1)'} size={'7vw'} minSize={'32px'}>
+          Full-stack <br/> Web Developer
         </TextHugeStyling>
       </TextHuge>
       <SkillsAndServices letterClass={letterClass} />

@@ -13,6 +13,7 @@ const HeaderBox = styled.div`
     position: relative;
     z-index: 10;
     font-size: 22px;
+    background-color: var(--app-color-2);
 `
 
 export const Header = () => {
@@ -34,7 +35,8 @@ export const Header = () => {
         <HeaderBox>
             <Link href="/">
                 <a>
-                    <AnimatedLetters 
+                    <AnimatedLetters
+                        classtype='title'
                         letterClass={letterClass}
                         strArray={linkProfileArray}
                         idx={15}
@@ -43,7 +45,8 @@ export const Header = () => {
             </Link>
             <Link href="/works">
                 <a>
-                    <AnimatedLetters 
+                    <AnimatedLetters
+                        classtype='title'
                         letterClass={letterClass}
                         strArray={linkWorksArray}
                         idx={22}

@@ -46,7 +46,7 @@ export const Services = () => {
     </div>
     <div className={`${styles.item} ${styles._3}`} style={{marginTop: 12, left: third && 0}}>
       <p className={styles['sub-title']}>Discord bots</p>
-      <p className={styles.desc}>All in one</p>
+      <p className={styles.desc}>All</p>
     </div>
   </div>
 }
