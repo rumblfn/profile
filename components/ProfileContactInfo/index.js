@@ -16,12 +16,12 @@ export const ContactMe = ({transformString}) => {
           <p className={styles.text}>GitHub/rumblfn</p>
         </a>
       </div>
-      <div className={styles['about-item']}>
-        <Image alt="profile" objectFit="cover" src='/gmail.png' width={60} height={60}/>
-        <a href='mailto:toshamilgis@gmail.com' target='_blank' rel="noreferrer">
-          <p className={styles.text}>Gmail/toshamilgis</p>
-        </a>
-      </div>
+      {/*<div className={styles['about-item']}>*/}
+      {/*  <Image alt="profile" objectFit="cover" src='/gmail.png' width={60} height={60}/>*/}
+      {/*  <a href='mailto:toshamilgis@gmail.com' target='_blank' rel="noreferrer">*/}
+      {/*    <p className={styles.text}>Gmail/toshamilgis</p>*/}
+      {/*  </a>*/}
+      {/*</div>*/}
       <div className={styles['about-item']}>
         <Image alt="profile" objectFit="cover" src='/tg.png' width={60} height={60}/>
         <a href='https://t.me/rumblfn' target='_blank' rel="noreferrer">
