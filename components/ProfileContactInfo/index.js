@@ -8,7 +8,7 @@ export const ContactMe = ({transformString}) => {
       <p className={stylesletters.title}>Contact Me</p>
       <div className={styles['about-item']}>
         <Image alt="profile" objectFit="cover" src='/discord.png' width={60} height={60}/>
-        <p className={styles.text}>sham#6666</p>
+        <p className={styles.text}>melancholysham#6666</p>
       </div>
       <div className={styles['about-item']}>
         <Image alt="profile" objectFit="cover" src='/github.png' width={60} height={60}/>
