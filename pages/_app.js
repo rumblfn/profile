@@ -9,6 +9,7 @@ import {slideRight} from "../lib/animations"
 import {createContext, useEffect, useRef, useState} from "react";
 import Image from "next/image";
 import {BgText} from "../components/bgtext";
+import Head from "next/head";
 
 export const CursorImageContext = createContext({})
 
@@ -32,6 +33,15 @@ function MyApp({Component, pageProps, router}) {
   }, [])
 
   return <div style={{position: 'relative'}}>
+    <Head>
+      <meta charSet="utf-8"/>
+      <meta content="width=device-width, initial-scale=1" name="viewport"/>
+      <meta
+        name="description"
+        content="Rumblfn, aka: sham#6666 bio web site"
+      />
+      <title>rumblfn</title>
+    </Head>
     <div ref={cursorRef} className='app-cursor' style={{backgroundColor: image && 'white'}}>
       {image ?
         <Image src={image} width='80px' height='80px' objectFit='cover'/>
