@@ -1,0 +1,14 @@
+.expand {
+  background-color: var(--app-color-8);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.body {
+  padding: 12px 0 0 20px;
+  width: 400px;
+
+  @media screen and(max-width: 515px) {
+    width: 100%
+  }
+}

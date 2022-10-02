@@ -20,6 +20,7 @@ export const Header = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const linkProfileArray = ["Profile"]
     const linkWorksArray = ['Works']
+    const pricingArray = ['Pricing']
 
     const timer = setTimeout(() => {
         setLetterClass('text-animate-hover')
@@ -50,6 +51,16 @@ export const Header = () => {
                         letterClass={letterClass}
                         strArray={linkWorksArray}
                         idx={22}
+                    />
+                </a>
+            </Link>
+            <Link href="/pricing">
+                <a>
+                    <AnimatedLetters
+                      classtype='title'
+                      letterClass={letterClass}
+                      strArray={pricingArray}
+                      idx={29}
                     />
                 </a>
             </Link>

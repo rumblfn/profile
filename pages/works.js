@@ -1,5 +1,5 @@
 import {PageBox} from "../styled/pages";
-import {TextHuge, TextHugeStyling} from "../styled/text";
+import {TextHugeStyling} from "../styled/text";
 import {GridWorksBox, GridWorksWrapper} from "../styled/gridbox";
 import {WorkPreview} from "../components/Work";
 
