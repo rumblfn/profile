@@ -1,4 +1,4 @@
-import {motion} from 'framer-motion'
+const {motion} = require('framer-motion')
 import React from "react";
 import styles from './card.module.scss'
 

@@ -13,14 +13,13 @@ const nextConfig = {
 
 import { Header } from '../components/Header'
 import '../styles/globals.css'
-import {
+const {
   AnimatePresence,
   domAnimation, LazyMotion,
   m
-} from "framer-motion"
+} = require('framer-motion')
 import { slideRight } from "../lib/animations"
 import {createContext, useEffect, useRef, useState} from "react";
-import Image from "next/image";
 
 export const CursorImageContext = createContext({})
 
