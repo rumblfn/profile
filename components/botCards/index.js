@@ -1,6 +1,6 @@
 import React  from "react";
 import styles from './style.module.scss'
-const {motion, AnimatePresence} = require('framer-motion')
+import {motion, AnimatePresence} from 'framer-motion'
 import {Card} from "./card";
 import {ExpandCard} from "./ExpandCard";
 

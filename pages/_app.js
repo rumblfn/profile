@@ -1,10 +1,10 @@
 import {Header} from '../components/Header'
 import '../styles/globals.css'
-const {
+import {
   AnimatePresence,
   domAnimation, LazyMotion,
   m
-} = require('framer-motion')
+} from 'framer-motion'
 import {slideRight} from "../lib/animations"
 import {createContext, useEffect, useRef, useState} from "react";
 import Image from "next/image";
