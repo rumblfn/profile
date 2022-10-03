@@ -7,8 +7,10 @@
 .body {
   padding: 12px 0 0 20px;
   width: 400px;
+}
 
-  @media screen and(max-width: 515px) {
+@media screen and(max-width: 515px) {
+  .body {
     width: 100%
   }
 }

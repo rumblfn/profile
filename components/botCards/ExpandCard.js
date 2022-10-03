@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion'
 import React from "react";
-import styles from './expand.module.scss'
+import styles from './expand.module.css'
 
 export const ExpandCard = ({selectedId, item, onClick}) => {
   return <motion.div className={styles.expand} layoutId={selectedId} onClick={e => e.stopPropagation()}>
