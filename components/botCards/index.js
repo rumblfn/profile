@@ -1,8 +1,9 @@
-import React  from "react";
+import React, {useContext} from "react";
 import styles from './style.module.scss'
 import {motion, AnimatePresence} from 'framer-motion'
 import {Card} from "./card";
 import {ExpandCard} from "./ExpandCard";
+import {CursorImageContext} from "../../pages/_app";
 
 const bots = [
   {
@@ -56,13 +57,20 @@ const bots = [
 ];
 
 export const BotCards = ({setSelectedId, selectedId}) => {
+  const {scrollY} = useContext(CursorImageContext)
+
   return <div className={styles.box}>
     {bots.map((item, id) =>
       <Card key={id} item={item} onClick={setSelectedId} />
     )}
     <AnimatePresence>
       {selectedId !== null && (
-        <motion.div className={styles['expand-wrapper']}>
+        <motion.div
+          className={styles['expand-wrapper']}
+          animate={{
+            y: scrollY - 100,
+            backgroundColor: "rgba(0, 0, 0, 0.5)"
+        }}>
           <ExpandCard
             item={bots[selectedId - 1]}
             selectedId={selectedId}

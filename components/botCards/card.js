@@ -10,6 +10,6 @@ export const Card = ({item, onClick}) => {
       onClick(item.id)
     }}>
     <motion.h5>{item.price}</motion.h5>
-    <motion.h2>{item.name}</motion.h2>
+    <motion.h2 className={styles.heading}>{item.name}</motion.h2>
   </motion.div>
 }

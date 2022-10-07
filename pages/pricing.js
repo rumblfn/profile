@@ -2,7 +2,7 @@ import {PageBox} from "../styled/pages";
 import {BotCards} from "../components/botCards";
 import {AnimatedLetters} from "../components/AnimatedLetters";
 import {useEffect, useState} from "react";
-import {TextHugeStyling} from "../styled/text";
+import {TextHugeHeadingBoxStyling, TextHugeHeadingStyling, TextHugeStyling} from "../styled/text";
 import {PricingSectionWrapper} from "../styled/PricingSectionWrapper";
 
 export const Pricing = () => {
@@ -29,13 +29,15 @@ export const Pricing = () => {
         </TextHugeStyling>
       </div>
       <PricingSectionWrapper onClick={() => setSelectedId(null)}>
-        <TextHugeStyling size={'5vw'} minSize={'24px'}>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={strArrayBots}
-            idx={1}
-          />
-        </TextHugeStyling>
+        <TextHugeHeadingBoxStyling>
+          <TextHugeHeadingStyling size={'5vw'} minSize={'32px'}>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={strArrayBots}
+              idx={1}
+            />
+          </TextHugeHeadingStyling>
+        </TextHugeHeadingBoxStyling>
         <BotCards setSelectedId={setSelectedId} selectedId={selectedId} />
       </PricingSectionWrapper>
     </PageBox>

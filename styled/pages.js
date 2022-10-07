@@ -9,6 +9,7 @@ export const PageBox = styled.div`
     animation: gradient 15s ease infinite;
     z-index: 2;
     background-size: 400% 400%;
+    overflow: hidden !important;
 
   @keyframes gradient {
     0% {

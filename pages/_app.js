@@ -15,6 +15,7 @@ export const CursorImageContext = createContext({})
 
 function MyApp({Component, pageProps, router}) {
   const [image, setImage] = useState('')
+  const [scrollY, setScrollY] = useState(0)
   const cursorRef = useRef()
 
   const handleMouseMove = event => {
@@ -25,10 +26,16 @@ function MyApp({Component, pageProps, router}) {
     cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`
   }
 
+  const handleScroll = () => {
+    setScrollY(window.scrollY)
+  }
+
   useEffect(() => {
     document.addEventListener('mousemove', handleMouseMove)
+    document.addEventListener('scroll', handleScroll)
     return () => {
       document.removeEventListener('mousemove', handleMouseMove)
+      document.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
@@ -59,7 +66,7 @@ function MyApp({Component, pageProps, router}) {
           variants={slideRight.variants}
           transition={slideRight.transition}
         >
-          <CursorImageContext.Provider value={{setImage}}>
+          <CursorImageContext.Provider value={{setImage, scrollY}}>
             <Component {...pageProps} />
           </CursorImageContext.Provider>
         </m.div>
