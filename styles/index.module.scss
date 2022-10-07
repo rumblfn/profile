@@ -66,8 +66,8 @@
 }
 
 .pic {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background: url("/profile-icon.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -79,7 +79,7 @@
 .pic::before {
   content: '';
   position: absolute;
-  width: 300px;
+  width: 200px;
   height: 0px;
   background: url("/profile-icon.jpg") no-repeat;
   background-size: cover;
