@@ -6,47 +6,47 @@
 @keyframes moving {
   0% {
     top: 9%;
-    left: 5%;
+    right: 5%;
   }
   10% {
     top: 9%;
-    left: 5%;
+    right: 5%;
   }
   20% {
     top: 9%;
-    left: 5%;
+    right: 5%;
   }
   30% {
     top: 9%;
-    left: 5%;
+    right: 5%;
   }
   40% {
     top: 9%;
-    left: 5%;
+    right: 5%;
   }
   50% {
     top: 15%;
-    left: 40%;
+    right: 40%;
   }
   60% {
     top: 15%;
-    left: 40%;
+    right: 40%;
   }
   70% {
     top: 15%;
-    left: 40%;
+    right: 40%;
   }
   80% {
     top: 15%;
-    left: 40%;
+    right: 40%;
   }
   90% {
     top: 15%;
-    left: 40%;
+    right: 40%;
   }
   100% {
     top: 9%;
-    left: 5%;
+    right: 5%;
   }
 }
 
@@ -62,19 +62,19 @@
 
 @keyframes persp {
   0% {
-    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+    transform: perspective(30em) rotateX(2deg) rotateY(-10deg);
   }
   10% {
-    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+    transform: perspective(30em) rotateX(2deg) rotateY(-10deg);
   }
   20% {
-    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+    transform: perspective(30em) rotateX(2deg) rotateY(-10deg);
   }
   30% {
-    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+    transform: perspective(30em) rotateX(2deg) rotateY(-10deg);
   }
   40% {
-    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+    transform: perspective(30em) rotateX(2deg) rotateY(-10deg);
   }
   50% {
     transform: perspective(30em) rotateX(2deg) rotateY(-5deg);
@@ -92,7 +92,7 @@
     transform: perspective(30em) rotateX(2deg) rotateY(-5deg);
   }
   100% {
-    transform: perspective(30em) rotateX(2deg) rotateY(15deg);
+    transform: perspective(30em) rotateX(2deg) rotateY(-10deg);
   }
 }
 
@@ -111,9 +111,10 @@
   .left-top-box {
     position: absolute;
     top: 9%;
-    left: 5%;
+    right: 5%;
     z-index: 2;
-    animation: moving 30s infinite ease;
+    transform: perspective(60em) rotateX(-2deg) rotateY(-10deg);
+    //animation: moving 30s infinite ease;
   }
 
   .box-with-animation {

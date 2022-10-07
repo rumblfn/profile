@@ -41,43 +41,8 @@ const Index = () => {
     }
   }, [])
 
-  if (tablet) {
-    return <PageBox padding='24px 36px 24px 24px'>
-      <TextHuge>
-        <TextHugeStyling>
-          Profile
-        </TextHugeStyling>
-        <TextHugeStyling color={'var(--app-color-5)'} size={'5vw'} minSize={'24px'}>
-          Hi 👋, I am
-        </TextHugeStyling>
-        <TextHugeStyling color={'var(--app-color-1)'} size={'7vw'} minSize={'32px'}>
-          Full-stack Web Developer
-        </TextHugeStyling>
-      </TextHuge>
-      <div className={styles['wrap-box']}>
-        <div className={styles['pic-tablet-box']}>
-          <div className={styles['pic-tablet']}></div>
-        </div>
-        <div className={styles.box} style={{marginBottom: 24}}>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={strArrayWho}
-            idx={1}
-          />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={strArrayWhat}
-            idx={7}
-          />
-        </div>
-      </div>
-      <SkillsAndServices letterClass={letterClass} />
-      <ContactMe transformString={transformString} />
-    </PageBox>
-  }
-
   return (
-    <PageBox>
+    <PageBox padding={tablet && '24px 36px 24px 24px'}>
       <TextHuge>
         <TextHugeStyling>
           Profile
@@ -89,11 +54,14 @@ const Index = () => {
           Full-stack <br/> Web Developer
         </TextHugeStyling>
       </TextHuge>
-      <SkillsAndServices letterClass={letterClass} />
-      <ContactMe transformString={transformString} />
-      <div className={styles['right-bottom-box']}>
+      <div className={styles[tablet ? 'wrap-box' : 'right-bottom-box']}>
         <div className={styles.box}>
-          <div className={styles.pic}></div>
+          {tablet ?
+            <div className={styles['pic-tablet-box']}>
+              <div className={styles['pic-tablet']}></div>
+            </div>
+            : <div className={styles.pic}></div>
+          }
           <AnimatedLetters
             letterClass={letterClass}
             strArray={strArrayWho}
@@ -106,6 +74,8 @@ const Index = () => {
           />
         </div>
       </div>
+      <SkillsAndServices letterClass={letterClass} />
+      <ContactMe transformString={transformString} />
     </PageBox>
   )
 }
