@@ -37,7 +37,7 @@
 .pic-tablet {
   width: 200px;
   height: 200px;
-  background: url("/profile-icon.jpg") no-repeat;
+  background: url("/profile-icon.webp") no-repeat;
   background-size: cover;
   overflow: hidden;
 }
@@ -47,7 +47,7 @@
   content: '';
   width: 200px;
   height: 0px;
-  background: url("/profile-icon.jpg") no-repeat;
+  background: url("/profile-icon.webp") no-repeat;
   background-size: cover;
   opacity: 0;
   overflow: hidden;
@@ -68,7 +68,7 @@
 .pic {
   width: 200px;
   height: 200px;
-  background: url("/profile-icon.jpg") no-repeat;
+  background: url("/profile-icon.webp") no-repeat;
   background-size: cover;
   overflow: hidden;
   border-radius: 10px;
@@ -81,7 +81,7 @@
   position: absolute;
   width: 200px;
   height: 0px;
-  background: url("/profile-icon.jpg") no-repeat;
+  background: url("/profile-icon.webp") no-repeat;
   background-size: cover;
   opacity: 0;
   overflow: hidden;
