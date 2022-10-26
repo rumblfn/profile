@@ -48,7 +48,7 @@ const Index = () => {
           Profile
         </TextHugeStyling>
         <TextHugeStyling color={'var(--app-color-5)'} size={'5vw'} minSize={'24px'}>
-          Hi 👋, I am
+          Hi 👋, I am a
         </TextHugeStyling>
         <TextHugeStyling color={'var(--app-color-1)'} size={'7vw'} minSize={'32px'}>
           Full-stack <br/> Web Developer
