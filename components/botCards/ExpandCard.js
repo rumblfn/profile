@@ -8,7 +8,7 @@ export const ExpandCard = ({selectedId, item, onClick}) => {
     <motion.h2>{item.name}</motion.h2>
     <motion.div className={styles.body}>
       {item.options.map((option, idx) =>
-        <motion.ul key={idx}>
+        <motion.ul key={idx} style={{marginLeft: 8}}>
           <motion.li>
             {option}
           </motion.li>

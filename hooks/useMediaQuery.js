@@ -16,7 +16,6 @@ export const useMediaQuery = width =>
     media.addEventListener('change', updateTarget)
 
     if (media.matches) setTargetReached(true)
-
     return () => media.removeEventListener('change', updateTarget)
   }, [])
 

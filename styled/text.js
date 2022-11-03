@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const TextHuge = styled.div`
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    margin-top: 1%;
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
   

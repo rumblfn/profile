@@ -1,7 +1,11 @@
+.wrapper {
+  position: relative;
+}
+
 .left-bottom-box {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
+  //position: absolute;
+  margin-top: 3%;
+  margin-left: 5%;
   z-index: 2;
 }
 

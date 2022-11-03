@@ -8,7 +8,7 @@ import {PricingSectionWrapper} from "../styled/PricingSectionWrapper";
 export const Pricing = () => {
   const [selectedId, setSelectedId] = useState(null)
   const [letterClass, setLetterClass] = useState('text-animate')
-  const strArrayBots = 'Discord Bots'.split('')
+  const strArrayBots = 'Discord Bots — discord.js + Sequelize + PostgreSQL'.split('')
   const color = "var(--app-color-0)"
 
   const timer = setTimeout(() => {

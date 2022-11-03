@@ -6,9 +6,11 @@ import styles from '../styles/index.module.scss'
 import {ContactMe} from "../components/ProfileContactInfo";
 import {SkillsAndServices} from "../components/SkillsAndServices";
 import {useMediaQuery} from "../hooks/useMediaQuery";
+import {IndexPageBottomHoc} from "../components/hocs/indexPageBottom";
 
 const Index = () => {
   const [screen, setScreen] = useState({width: 1280, height: 800})
+  const [posContactMe, setPosContactMe] = useState({x: 0, y: 0})
   const [letterClass, setLetterClass] = useState('text-animate')
   const strArrayWho = 'Shamil'.split('')
   const strArrayWhat = 'Dev Portfolio'.split('')
@@ -27,7 +29,15 @@ const Index = () => {
 
   const handleMouseMove = event => {
     const {clientX, clientY} = event
-    setTransformString(`perspective(20em) rotateX(${clientX * 15 / screen.width}deg) rotateY(${clientY * 15 / screen.height}deg)`)
+    setTransformString(`
+    perspective(40em)
+      rotateX(
+        ${(clientX - posContactMe.x) / screen.width}deg
+      )
+      rotateZ(
+        ${(posContactMe.y - clientY) / screen.height}deg
+      )
+    `)
   }
 
   useEffect(() => {
@@ -54,28 +64,33 @@ const Index = () => {
           Full-stack <br/> Web Developer
         </TextHugeStyling>
       </TextHuge>
-      <div className={styles[tablet ? 'wrap-box' : 'right-bottom-box']}>
-        <div className={styles.box}>
-          {tablet ?
-            <div className={styles['pic-tablet-box']}>
-              <div className={styles['pic-tablet']}></div>
-            </div>
-            : <div className={styles.pic}></div>
-          }
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={strArrayWho}
-            idx={1}
-          />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={strArrayWhat}
-            idx={7}
-          />
+      <IndexPageBottomHoc tablet={tablet}>
+        <div className={styles[tablet ? 'wrap-box' : 'right-bottom-box']}>
+          <div className={styles.box}>
+            {tablet ?
+              <div className={styles['pic-tablet-box']}>
+                <div className={styles['pic-tablet']}></div>
+              </div>
+              : <div className={styles.pic}></div>
+            }
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={strArrayWho}
+              idx={1}
+            />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={strArrayWhat}
+              idx={7}
+            />
+          </div>
         </div>
-      </div>
-      <SkillsAndServices letterClass={letterClass} />
-      <ContactMe transformString={transformString} />
+        <SkillsAndServices letterClass={letterClass} />
+        <ContactMe
+          transformString={transformString}
+          setPosContactMe={setPosContactMe}
+        />
+      </IndexPageBottomHoc>
     </PageBox>
   )
 }

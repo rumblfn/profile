@@ -8,52 +8,70 @@ import {CursorImageContext} from "../../pages/_app";
 const bots = [
   {
     id: 1,
-    name: 'Economy',
-    price: '8500₽',
-    options: ['Duels', 'Shop', 'Role Manager', 'Love Rooms', 'Cases', 'Inventory', 'Transactions', 'Setup without code changing']
-  }, // 4267 lines
+    name: 'Экономика',
+    price: '2000₽-6000₽',
+    options: ['Дуэли', 'Магазин', 'Личные роли', 'Лав румы', 'Кейсы', 'Инвентарь', 'Транзакции', 'Настройка сервера по командам (роли, каналы, конфиг)', 'Кланы']
+  },
   {
     id: 2,
-    name: 'Moderation',
-    price: '3000₽',
-    options: ['List of user nicknames/punishments', 'Warnings', 'Mutes', 'Bans', 'Unlimited time of punishment', 'Direct message of punishment reason', 'Staff Profile']
-  }, // 1507 lines
+    name: 'Модерация',
+    price: '1000₽-3000₽',
+    options: ['История никнеймов/наказаний', 'Предупреждения', 'Муты', 'Баны', 'Неограниченное время нарушения', 'Профиль']
+  },
   {
     id: 3,
-    name: 'Verification',
-    price: '1400₽',
-    options: ['Adding/Deleting Genders', 'Any genders', 'Verification mark feedback']
-  }, // 730 lines
+    name: 'Верификация',
+    price: '500₽',
+    options: ['Удаление/Добавление гендерной роли', 'Оценка верификатора', 'Дефолтная роль на сервере', 'Массовая верификация']
+  },
   {
     id: 4,
     name: 'Anti-Raid',
     price: '500₽',
-    options: ['Setting up the time and limit of users in a given period of time', 'Kick With dm', 'Logs Channel']
+    options: ['Лимит пользователей за заданный промежуток времени', 'Личные сообщения с нарушением', 'Канал с логами']
   }, // 350 lines
   {
     id: 5,
-    name: 'Anti-Crush',
-    price: '1100₽',
-    options: ['Logs Channel', 'Setting up the time and limit of actions in a given period of time', 'Roles /Channels /Kicks /Bans /Messages Pins']
+    name: 'Anti-Crash',
+    price: '700₽',
+    options: ['Логи', 'Лимит нарушений за заданный промежуток времени', 'Отслеживание действий с ролями, каналами, киками, банами, прикреплением сообщений']
   }, // 551 lines
   {
     id: 6,
-    name: 'Events',
-    price: '3000₽',
-    options: ['Custom Mafia: registration for the event, distribution of game roles, sending personal messages with roles to the host and participants', 'Adding/Removing event', 'Reading a json file and installing it as a webhook for an invitation to an event', 'All/Week time profile', 'Creating Channels', 'Event Ban']
+    name: 'Ивенты',
+    price: '1000₽',
+    options: ['Кастомная мафия: регистрация на мероприятие, распределение игровых ролей, отправка личных сообщений с ролями ведущему и участникам, голосование', 'Добавление/Удаление ивента', 'Добавление вебхука (приглашения на мероприятие) через чат сервера', 'Профиль ивентера', 'Создание каналов', 'Ивент бан']
   }, // 1989 lines
   {
     id: 7,
-    name: 'Close',
-    price: '2000₽',
-    options: ['CS:GO /Brawl Stars /Dota 2 /Valorant /League of Legends /Custom close', 'Close Ban', 'Admin Commands', 'Close 5x5', 'Registration to the team']
+    name: 'Клозы',
+    price: '1200₽',
+    options: ['CS:GO /Brawl Stars /Dota 2 /Valorant /League of Legends /Custom close', 'Клоз бан', 'Admin Commands', 'Close 5x5', 'Запись в команду']
   }, // 1989 lines
   {
     id: 8,
-    name: 'Staff sets',
+    name: 'Набор в стафф',
     price: '600₽',
-    options: ['Logs Channel']
+    options: ['Логи', 'Добавление ролей и вебхуков', 'Модальное окно с вопросами']
   }, // 487 lines
+  {
+    id: 9,
+    name: 'Кланы',
+    price: '1000₽',
+    options: ['Клановый чат', 'Клановый магазин с баннерами для кланового профиля', 'Клановый профиль', 'Пополнение клана', 'Топ кланов', 'Топ участников клана', 'Управление участником клана', 'Клановй ассистент', 'Приглашения в клан']
+  },
+  {
+    id: 10,
+    name: 'Приватные комнаты',
+    price: '500₽',
+    options: ['Управлние комнатой по кнопкам']
+  },
+  {
+    id: 11,
+    name: 'Anti-Spam',
+    price: '500₽',
+    options: ['Логи', 'Удаление сообщений/вебхуков с приглашениями на сервера, упоминанием @everyone']
+  }, // 551 lines
 ];
 
 export const BotCards = ({setSelectedId, selectedId}) => {

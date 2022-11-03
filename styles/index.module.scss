@@ -60,9 +60,16 @@
 }
 
 .right-bottom-box {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
+  //position: absolute;
+  //bottom: 5%;
+  //right: 5%;
+}
+
+.botWrapper {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .pic {

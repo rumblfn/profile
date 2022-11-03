@@ -15,8 +15,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Argentum Sans Black", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Argentum Sans Black", sans-serif;
   box-sizing: border-box;
   color: var(--app-text-color-black);
   cursor: none;
