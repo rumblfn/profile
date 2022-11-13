@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import styles from './style.module.scss'
 
-const WorkWrapper = styled.div`
+export const WorkWrapper = styled.div`
   aspect-ratio: 1 / 1;
   width: 100%;
   overflow: hidden;
@@ -17,7 +17,7 @@ const WorkWrapper = styled.div`
   }
 `
 
-const ImageWrapper = styled.div`
+export const ImageWrapper = styled.div`
   background: url(${props => props.url}) no-repeat;
   background-size: cover;
   width: 100%;
