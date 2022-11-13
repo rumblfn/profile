@@ -12,10 +12,17 @@
   src: url('/ArgentumSans-Bold.ttf') format('woff');
 }
 
+@font-face {
+  font-family: 'NeueMachina';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/NeueMachina-Bold.ttf') format('woff');
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-family: "Argentum Sans Black", sans-serif;
+  font-family: "Argentum Sans Black", "NeueMachina";
   box-sizing: border-box;
   color: var(--app-text-color-black);
   cursor: none;

@@ -22,7 +22,7 @@ export const Pricing = () => {
   }, [timer])
 
   return (
-    <PageBox padding='0px' color={color}>
+    <PageBox padding='0px 16px 64px' color={color}>
       <div style={{padding: 64, paddingBottom: 24}}>
         <TextHugeStyling color={color}>
           Pricing

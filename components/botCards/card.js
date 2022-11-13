@@ -4,6 +4,7 @@ import styles from './card.module.scss'
 
 export const Card = ({item, onClick}) => {
   return <motion.div
+    style={{backgroundColor: item.color}}
     className={styles.card}
     layoutId={item.id} onClick={(e) => {
       e.stopPropagation()
