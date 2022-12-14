@@ -16,9 +16,9 @@ export async function getStaticProps() {
       invite_link: 'https://discord.gg/anko'
     },
     {
-      invite_link: 'https://discord.com/invite/hatoryds',
+      invite_link: 'https://discord.gg/hatory',
       name: 'HATORY',
-      image_url: 'https://cdn.discordapp.com/icons/1038394487841505300/a_9a4c563fbb5a89356342b06baf945d55.gif?size=1024'
+      image_url: 'https://cdn.discordapp.com/icons/894663985650081864/a_74c70f4c5f6e833b7b072c86f98fe010.gif?size=1024'
     }
   ]
 
