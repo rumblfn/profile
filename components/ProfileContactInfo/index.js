@@ -28,8 +28,8 @@ export const ContactMe = ({transformString, setPosContactMe}) => {
       </div>
       <div className={styles['about-item']}>
         <Image alt="profile" objectFit="cover" src='/tg.png' width={60} height={60}/>
-        <a href='https://t.me/rumblfn' target='_blank' rel="noreferrer">
-          <p className={styles.text}>rumblfn</p>
+        <a href='https://t.me/ssharum' target='_blank' rel="noreferrer">
+          <p className={styles.text}>ssharum</p>
         </a>
       </div>
     </div>

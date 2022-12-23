@@ -67,12 +67,12 @@ const Index = () => {
       <IndexPageBottomHoc tablet={tablet}>
         <div className={styles[tablet ? 'wrap-box' : 'right-bottom-box']}>
           <div className={styles.box}>
-            {tablet ?
-              <div className={styles['pic-tablet-box']}>
-                <div className={styles['pic-tablet']}></div>
-              </div>
-              : <div className={styles.pic}></div>
-            }
+            {/*{tablet ?*/}
+            {/*  <div className={styles['pic-tablet-box']}>*/}
+            {/*    <div className={styles['pic-tablet']}></div>*/}
+            {/*  </div>*/}
+            {/*  : <div className={styles.pic}></div>*/}
+            {/*}*/}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={strArrayWho}

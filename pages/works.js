@@ -11,11 +11,6 @@ export async function getStaticProps() {
       name: 'lourees. ザス'
     },
     {
-      image_url: 'https://cdn.discordapp.com/icons/925412408485371924/a_665269bbb84c7e110c8583d25f333857.gif?size=1024',
-      name: 'Anko. ザス',
-      invite_link: 'https://discord.gg/anko'
-    },
-    {
       invite_link: 'https://discord.gg/hatory',
       name: 'HATORY',
       image_url: 'https://cdn.discordapp.com/icons/894663985650081864/a_74c70f4c5f6e833b7b072c86f98fe010.gif?size=1024'
