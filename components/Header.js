@@ -54,16 +54,16 @@ export const Header = () => {
                     />
                 </a>
             </Link>
-            <Link href="/pricing">
-                <a>
-                    <AnimatedLetters
-                      classtype='title'
-                      letterClass={letterClass}
-                      strArray={pricingArray}
-                      idx={29}
-                    />
-                </a>
-            </Link>
+            {/*<Link href="/pricing">*/}
+            {/*    <a>*/}
+            {/*        <AnimatedLetters*/}
+            {/*          classtype='title'*/}
+            {/*          letterClass={letterClass}*/}
+            {/*          strArray={pricingArray}*/}
+            {/*          idx={29}*/}
+            {/*        />*/}
+            {/*    </a>*/}
+            {/*</Link>*/}
         </HeaderBox>
     )
 }
