@@ -6,9 +6,9 @@ import {ImageWrapper, WorkPreview} from "../components/Work";
 export async function getStaticProps() {
   const guilds = [
     {
-      invite_link: 'https://discord.gg/hatory',
-      name: 'HATORY',
-      image_url: 'https://cdn.discordapp.com/icons/894663985650081864/a_74c70f4c5f6e833b7b072c86f98fe010.gif?size=1024'
+      invite_link: 'https://discord.gg/decides',
+      name: 'DECIDE',
+      image_url: 'https://cdn.discordapp.com/icons/1044632380549378170/a_0a8510fcdb206f466517d7b12505e09b.gif?size=512'
     }
   ]
 
