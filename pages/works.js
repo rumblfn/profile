@@ -8,7 +8,7 @@ export async function getStaticProps() {
     {
       invite_link: 'https://discord.gg/decides',
       name: 'DECIDE',
-      image_url: 'https://cdn.discordapp.com/icons/1044632380549378170/a_0a8510fcdb206f466517d7b12505e09b.gif?size=512'
+      image_url: 'https://cdn.discordapp.com/icons/1044632380549378170/a_22fbcd5a6fc6f7d4003146fd86bb3ea9?size=1024'
     }
   ]
 
