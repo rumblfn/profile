@@ -37,7 +37,7 @@ export async function getStaticProps() {
         '/worksimages/messenger1.png',
         '/worksimages/messenger2.png'
       ],
-      homepage: 'http://82.148.17.229:3001/home'
+      homepage: 'http://46.19.65.187:3000'
     },
     {
       name: 'Note',
