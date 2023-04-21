@@ -10,6 +10,7 @@ import {createContext, useEffect, useRef, useState} from "react";
 import Image from "next/image";
 import {BgText} from "../components/bgtext";
 import Head from "next/head";
+import {PreLoader} from "../components/PreLoader";
 
 export const CursorImageContext = createContext({})
 
@@ -49,6 +50,7 @@ function MyApp({Component, pageProps, router}) {
       />
       <title>rumblfn</title>
     </Head>
+    <PreLoader/>
     <div ref={cursorRef} className='app-cursor' style={{backgroundColor: image && 'white'}}>
       {image ?
         <Image src={image} width='80px' height='80px' objectFit='cover'/>
