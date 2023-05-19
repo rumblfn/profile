@@ -11,7 +11,7 @@ export const ContactMe = ({transformString, setPosContactMe}) => {
       x: ref.current.offsetLeft + ref.current.clientWidth / 2,
       y: ref.current.offsetTop + ref.current.clientHeight / 2
     })
-  }, [ref])
+  }, [ref.current])
 
   return <div ref={ref} className={styles['left-bottom-box']}>
     <div className={styles['box-with-animation']} style={{transform: transformString, fontSize: 30}}>

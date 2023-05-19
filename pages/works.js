@@ -55,7 +55,7 @@ export async function getStaticProps() {
       homepage: 'https://rainbow-alpaca-4674bd.netlify.app/'
     },
     {
-      name: 'books searcher',
+      name: 'Books searcher',
       description: `
       Google API Books searcher, test assignment for the junior front-end position.
       Stack: React/Redux + TypeScript
@@ -71,6 +71,18 @@ export async function getStaticProps() {
         '/worksimages/books2.png',
       ],
       homepage: 'https://rumblfn.github.io/frontend-challenge-books/'
+    },
+    {
+      name: 'Simplified clone of whatsapp',
+      description: `An application for receiving and sending WhatsApp messages using the Green Api. For authorization, you need to use data from the Green Api system`,
+      github: [
+        {
+          name: 'repo',
+          value: 'https://github.com/rumblfn/GreenApiReactTestWork'
+        }
+      ],
+      images: ['/worksimages/wh2.png'],
+      homepage: 'https://6463d1e9a7111d00baf3cd6d--lighthearted-griffin-1d5726.netlify.app/'
     }
   ]
 
