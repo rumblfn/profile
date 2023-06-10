@@ -6,9 +6,9 @@ import {TextHugeHeadingBoxStyling, TextHugeHeadingStyling, TextHugeStyling} from
 import {PricingSectionWrapper} from "../styled/PricingSectionWrapper";
 
 export const Pricing = () => {
-  const [selectedId, setSelectedId] = useState(null)
+  const [selectedIdx, setSelectedIdx] = useState(null)
   const [letterClass, setLetterClass] = useState('text-animate')
-  const strArrayBots = 'Discord Bots — discord.js + Sequelize + PostgreSQL'.split('')
+  const strArrayBots = 'Discord Bots – d.js/ts'.split('')
   const color = "var(--app-color-0)"
 
   const timer = setTimeout(() => {
@@ -28,7 +28,7 @@ export const Pricing = () => {
           Pricing
         </TextHugeStyling>
       </div>
-      <PricingSectionWrapper onClick={() => setSelectedId(null)}>
+      <PricingSectionWrapper onClick={() => setSelectedIdx(null)}>
         <TextHugeHeadingBoxStyling>
           <TextHugeHeadingStyling size={'5vw'} minSize={'32px'}>
             <AnimatedLetters
@@ -38,7 +38,7 @@ export const Pricing = () => {
             />
           </TextHugeHeadingStyling>
         </TextHugeHeadingBoxStyling>
-        <BotCards setSelectedId={setSelectedId} selectedId={selectedId} />
+        <BotCards setSelectedIdx={setSelectedIdx} selectedIdx={selectedIdx} />
       </PricingSectionWrapper>
     </PageBox>
   )
