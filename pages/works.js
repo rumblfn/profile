@@ -88,6 +88,18 @@ export async function getStaticProps() {
       ],
       images: ['/worksimages/wh2.png'],
       homepage: 'https://6463d1e9a7111d00baf3cd6d--lighthearted-griffin-1d5726.netlify.app/'
+    },
+    {
+      name: 'Aak Discord Bot',
+      description: `Discord bot with customization via the website and support for multiple languages. Change server settings and profiles using a convenient panel`,
+      github: [
+        {
+          name: 'repo',
+          value: 'https://github.com/rumblfn/'
+        }
+      ],
+      images: ['/worksimages/aak1.png'],
+      homepage: 'https://aakbot.ru/'
     }
   ]
 
