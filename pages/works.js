@@ -11,7 +11,7 @@ export async function getStaticProps() {
       image_url: 'https://cdn.discordapp.com/icons/1044632380549378170/a_815def00034e923f3e2851922f937f4b.gif'
     },
     {
-      invite_link: 'https://discord.gg/KCWVH8ep',
+      invite_link: 'https://discord.gg/jamhub',
       name: 'JAM',
       image_url: 'https://cdn.discordapp.com/icons/1060286255629344908/a_73a5f28ddd8d2300d0706449c689204a.gif'
     }
