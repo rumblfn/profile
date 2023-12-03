@@ -21,6 +21,11 @@ export async function getStaticProps() {
       image_url: '/guilds/futama.png'
     },
     {
+      invite_link: 'https://discord.gg/rozemais',
+      name: 'ROZEMAIS',
+      image_url: '/guilds/rozemais.png'
+    },
+    {
       invite_link: 'https://discord.gg/crystalys',
       name: 'CRYSTALYS',
       image_url: '/guilds/crystalys.gif'
