@@ -468,7 +468,7 @@ export const ContactMe = ({transformString}) => {
     <div className={styles['box-with-animation']} style={{transform: transformString, fontSize: 30}}>
       <p className={stylesletters.title}>Contact Me</p>
       <div className={styles['about-item']}>
-        <p className={styles.text}>sham#4275</p>
+        <p className={styles.text}>sssham</p>
       </div>
       <div className={styles['about-item']}>
         <a href='https://github.com/rumblfn' target='_blank' rel="noreferrer">

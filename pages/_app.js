@@ -46,7 +46,7 @@ function MyApp({Component, pageProps, router}) {
       <meta content="width=device-width, initial-scale=1" name="viewport"/>
       <meta
         name="description"
-        content="Rumblfn, aka: sham#4275 bio web site"
+        content="Rumblfn, aka: sssham bio web site"
       />
       <title>rumblfn</title>
     </Head>

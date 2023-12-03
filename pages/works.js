@@ -8,12 +8,32 @@ export async function getStaticProps() {
     {
       invite_link: 'https://discord.gg/decide',
       name: 'DECIDE',
-      image_url: 'https://cdn.discordapp.com/icons/1044632380549378170/a_815def00034e923f3e2851922f937f4b.gif'
+      image_url: '/guilds/decide.gif'
     },
     {
       invite_link: 'https://discord.gg/jamhub',
       name: 'JAM',
-      image_url: 'https://cdn.discordapp.com/icons/1060286255629344908/a_73a5f28ddd8d2300d0706449c689204a.gif'
+      image_url: '/guilds/jam.gif'
+    },
+    {
+      invite_link: 'https://discord.gg/futama',
+      name: 'FUTAMA',
+      image_url: '/guilds/futama.png'
+    },
+    {
+      invite_link: 'https://discord.gg/futama',
+      name: 'FUTAMA',
+      image_url: '/guilds/futama.png'
+    },
+    {
+      invite_link: 'https://discord.gg/crystalys',
+      name: 'CRYSTALYS',
+      image_url: '/guilds/crystalys.gif'
+    },
+    {
+      invite_link: 'https://discord.gg/xory-1026874373254164642',
+      name: 'XORY',
+      image_url: '/guilds/xory.png'
     }
   ]
 

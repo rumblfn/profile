@@ -18,7 +18,7 @@ export const ContactMe = ({transformString, setPosContactMe}) => {
       <p className={stylesletters.title}>Contact Me</p>
       <div className={styles['about-item']}>
         <Image alt="profile" objectFit="cover" src='/discord.png' width={60} height={60}/>
-        <p className={styles.text}>sham#4275</p>
+        <p className={styles.text}>sssham</p>
       </div>
       <div className={styles['about-item']}>
         <Image alt="profile" objectFit="cover" src='/github.png' width={60} height={60}/>
