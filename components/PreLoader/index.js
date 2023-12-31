@@ -7,18 +7,17 @@ export const PreLoader = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const strArrayPageLoading = 'Loading ...'.split('')
 
-  const handlePageLoaded = () => {
-    setPageLoading(false)
-  }
-
   useEffect(() => {
-    // document.body.style.overflow = 'hidden'
-    window.addEventListener('load', handlePageLoaded)
+    if (document.readyState !== "complete") {
+      window.addEventListener('load', () => setPageLoading(false))
 
-    return () => {
-      window.removeEventListener('load', handlePageLoaded)
+      return () => {
+        window.removeEventListener('load', () => setPageLoading(false))
+      }
+    } else {
+      setPageLoading(false)
     }
-  })
+  }, [])
 
   if (!pageLoading) return null
 
